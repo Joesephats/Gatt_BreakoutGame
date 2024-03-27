@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour
 
     public void Setup()
     {
+        youWonText.SetActive(false);
+
         clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity);
 
         switch (currentLevel)
