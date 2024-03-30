@@ -333,8 +333,8 @@ MonoBehaviour:
   gameOverText: {fileID: 2005834222}
   youWonText: {fileID: 2052152415}
   brickSet1: {fileID: 1475448733625745368, guid: 2737b94e2754f6942963729f6cde77a8, type: 3}
-  brickSet2: {fileID: 5834039765230882699, guid: fdc6314fc4f690948a822a43cca1ce93, type: 3}
-  brickSet3: {fileID: 5984297244851227282, guid: 3844126a6e1014c4d8b7736373eaa241, type: 3}
+  brickSet2: {fileID: 1475448733625745368, guid: 2737b94e2754f6942963729f6cde77a8, type: 3}
+  brickSet3: {fileID: 1475448733625745368, guid: 2737b94e2754f6942963729f6cde77a8, type: 3}
   paddle: {fileID: 5922845972835609632, guid: 4935be23a9d0adc47ba3e932c00b78d8, type: 3}
 --- !u!4 &468607975
 Transform:

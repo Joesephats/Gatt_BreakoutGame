@@ -51,7 +51,10 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.N))
         {
-            NextLevel();
+            //NextLevel();
+            bricks = 0;
+            CheckGameOver();
+
         }
     }
 
@@ -59,18 +62,24 @@ public class GameManager : MonoBehaviour
     {
         youWonText.SetActive(false);
 
+        lives = 3;
+        bricks = 20;
+
         clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity);
 
         switch (currentLevel)
         {
             case 1:
                 Instantiate(brickSet1, transform.position, Quaternion.identity);
+                Debug.Log("Level 1 brick spawn");
                 break;
             case 2:
                 Instantiate(brickSet2, transform.position, Quaternion.identity);
+                Debug.Log("Level 2 brick spawn");
                 break;
             case 3:
                 Instantiate(brickSet3, transform.position, Quaternion.identity);
+                Debug.Log("Level 3 brick spawn");
                 break;
         }
     }
